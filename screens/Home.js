@@ -62,60 +62,55 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#E0F7FA',
+    backgroundColor: '#121212', // Dark background for the overall container
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    fontSize: 28,
-    marginBottom: 30,
-    fontWeight: 'bold',
-    color: '#00796B',
+    fontSize: 30,
+    marginBottom: 25,
+    fontWeight: '900',
+    color: '#90CAF9', // Light blue for contrast against the dark background
   },
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     width: '100%',
-    backgroundColor: '#FFFFFF',
-    borderRadius: 25,
-    paddingHorizontal: 15,
-    paddingVertical: 10,
-    marginBottom: 20,
-    elevation: 3, // Для Android
-    shadowColor: '#000', // Для iOS
-    shadowOffset: { width: 0, height: 2 }, // Для iOS
-    shadowOpacity: 0.25, // Для iOS
-    shadowRadius: 3.84, // Для iOS
+    backgroundColor: '#333333', // Darker shade for input field
+    borderRadius: 30,
+    paddingHorizontal: 20,
+    paddingVertical: 12,
+    marginBottom: 15,
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)', // Adjusted shadow for more depth in dark mode
   },
   icon: {
-    marginRight: 10,
+    marginRight: 15,
   },
   input: {
     flex: 1,
     fontSize: 18,
-    color: '#00796B',
+    color: '#B0BEC5', // Soft light grey for text input to ensure readability
+    fontWeight: '500',
   },
   button: {
     flexDirection: 'row',
-    backgroundColor: '#00796B',
-    paddingVertical: 15,
-    paddingHorizontal: 25,
+    backgroundColor: 'linear-gradient(45deg, #0D47A1, #1565C0)', // Blue gradient for buttons
+    paddingVertical: 18,
+    paddingHorizontal: 30,
     borderRadius: 30,
     alignItems: 'center',
-    marginVertical: 10,
+    marginVertical: 12,
     width: '100%',
-    elevation: 3, // Для Android
-    shadowColor: '#000', // Для iOS
-    shadowOffset: { width: 0, height: 2 }, // Для iOS
-    shadowOpacity: 0.25, // Для iOS
-    shadowRadius: 3.84, // Для iOS
+    boxShadow: '0 5px 15px rgba(0, 0, 0, 0.3)', // Stronger shadow for a pronounced effect
   },
   buttonIcon: {
-    marginRight: 10,
+    marginRight: 12,
   },
   buttonText: {
-    color: '#FFFFFF',
-    fontSize: 18,
+    color: '#FFFFFF', // Keep text color white for high contrast on buttons
+    fontSize: 20,
     fontWeight: '600',
   },
 });
+
+
